@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.alura.nbytebank.nbytebank">
+    package="br.alura.nbytebank">
    <application
         android:label="nbytebank"
         android:icon="@mipmap/ic_launcher">

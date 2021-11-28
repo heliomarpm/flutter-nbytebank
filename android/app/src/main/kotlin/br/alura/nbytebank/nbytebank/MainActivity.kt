@@ -1,4 +1,4 @@
-package br.alura.nbytebank.nbytebank
+package br.alura.nbytebank
 
 import io.flutter.embedding.android.FlutterActivity
 
