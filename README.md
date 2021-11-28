@@ -1,6 +1,13 @@
 # nbytebank
 
-A new Flutter project.
+A new Flutter project Bytebank.
+
+## Abordagem
+* gerenciar o estado da sua aplicação com Single Source of Truth
+* Utilizar o Provider para gerenciar o estado de forma escalável
+* Consumir os dados do Provider com o Consumer
+* Separar a sua aplicação por responsabilidade
+* Entender as diferenças entre Provider.of e Consumer
 
 ## Getting Started
 
