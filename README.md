@@ -2,6 +2,8 @@
 
 A new Flutter project Bytebank.
 
+![Capa](screen.png?raw=true "Capa")
+
 ## Abordagem
 * gerenciar o estado da sua aplicação com Single Source of Truth
 * Utilizar o Provider para gerenciar o estado de forma escalável
