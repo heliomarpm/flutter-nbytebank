@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nbytebank/pages/dashboard/saldo_card.dart';
 import 'package:nbytebank/pages/deposito/deposito_form.page.dart';
+import 'package:nbytebank/pages/transferencia/transferencia_form.page.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({Key? key}) : super(key: key);
@@ -16,6 +17,9 @@ class DashboardPage extends StatelessWidget {
           alignment: Alignment.topCenter,
           child: SaldoCard(),
         ),
+        ButtonBar(
+          alignment: MainAxisAlignment.center,
+          children: [
         ElevatedButton(
           child: const Text('Creditar'),
           onPressed: () => Navigator.of(context).push(
@@ -24,6 +28,17 @@ class DashboardPage extends StatelessWidget {
             ),
           ),
         ),
+        ElevatedButton(
+          child: const Text('Transferência'),
+          onPressed: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => TransferenciaFormPage(),
+            ),
+          ),
+        ),
+
+          ],
+        )
       ]),
     );
   }

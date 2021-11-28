@@ -33,7 +33,7 @@ class TransferenciaListaPageState extends State<TransferenciaListaPage> {
         child: const Icon(Icons.add),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const TransferenciaFormPage();
+            return TransferenciaFormPage();
           })).then(
             (transferenciaRecebida) => _atualiza(transferenciaRecebida),
           );
