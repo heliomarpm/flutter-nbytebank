@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class SaldoModel extends ChangeNotifier{
-  final double valor;
+  double valor;
   
   SaldoModel(
     this.valor,
@@ -20,4 +20,14 @@ class SaldoModel extends ChangeNotifier{
 
   @override
   int get hashCode => valor.hashCode;
+
+  void creditar(double valor){
+    this.valor += valor;
+    notifyListeners();
+  }
+
+  void sacar(double valor){
+    this.valor -= valor;
+    notifyListeners();
+  }
 }

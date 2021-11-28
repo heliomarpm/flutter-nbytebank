@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nbytebank/models/saldo.dart';
+import 'package:nbytebank/models/saldo.model.dart';
 import 'package:provider/provider.dart';
 
 class SaldoCard extends StatelessWidget {
@@ -12,9 +12,9 @@ class SaldoCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Consumer<SaldoModel>(
-          builder: (context, valor, child) {
+          builder: (context, model, child) {
             return Text(
-              valor.toString(),
+              model.toString(),
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             );

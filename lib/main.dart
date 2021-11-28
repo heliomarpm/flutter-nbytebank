@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nbytebank/models/saldo.dart';
-import 'package:nbytebank/pages/dashboard/dashboard.dart';
+import 'package:nbytebank/models/saldo.model.dart';
 import 'package:provider/provider.dart';
+import 'package:nbytebank/pages/dashboard/dashboard.page.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -20,14 +20,14 @@ class MyApp extends StatelessWidget {
       title: 'New ByteBank',
       theme: ThemeData(
         primaryColor: Colors.green[900],
-        // accentColor: Colors.blueAccent[700],
-        // buttonTheme: ButtonThemeData(
-        //   buttonColor: Colors.blueAccent[700],
-        //   textTheme: ButtonTextTheme.primary,
-        // ),
-        primarySwatch: Colors.blue,
+        accentColor: Colors.blueAccent[700],
+        buttonTheme: ButtonThemeData(
+          buttonColor: Colors.blueAccent[700],
+          textTheme: ButtonTextTheme.primary,
+        ),
+        // primarySwatch: Colors.blue,
       ),
-      home: const Dashboard(),
+      home: const DashboardPage(),
     );
   }
 }
